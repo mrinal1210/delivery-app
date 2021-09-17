@@ -31,8 +31,8 @@
           </ion-item>
 
           <div class="button-section">
-            <ion-button>Sign Up</ion-button>
-            <span>Already have an account? <a>Sign in</a></span>
+            <ion-button (click)="signUpUser()">Sign Up</ion-button>
+            <span>Already have an account? <a (click)="navigateToSignIn()">Sign in</a></span>
           </div>
         </ion-card-content>
       </ion-card>

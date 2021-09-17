@@ -12,7 +12,7 @@
         <ion-card-header>
           <ion-card-title>Welcome!</ion-card-title>
           <ion-card-subtitle>
-            Time to Shop, Let's <a href="#">Sign in</a>
+            Time to Shop, Let's <strong>Sign in</strong>
           </ion-card-subtitle>
         </ion-card-header>
 
@@ -25,11 +25,11 @@
             <ion-input placeholder="Password"></ion-input>
           </ion-item>
 
-          <a href="#">Forgot password</a>
+          <a (click)="navigateToForgotPasswordPage()">Forgot password</a>
 
           <div class="button-section">
-            <ion-button>Sign In</ion-button>
-            <span>Don't have an account? <a href="#">Sign Up</a></span>
+            <ion-button (click)="navigateToHome()">Sign In</ion-button>
+            <span>Don't have an account? <a (click)="navigateToSignUpPage()">Sign Up</a></span>
           </div>
         </ion-card-content>
       </ion-card>
